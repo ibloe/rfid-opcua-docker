@@ -28,7 +28,7 @@ RUN apt-get update  \
     && mkdir /var/run/sshd \
     && sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config \
     && sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd \
-	&& sudo chmod -R g+rwx /home/pi/opc-ua-server/ \
+	&& sudo chmod -R g+rwx /home/pi/rfid_opcua/ \
 	&& apt-get install -y --no-install-recommends \
     less \
     kmod \
@@ -47,7 +47,6 @@ RUN apt-get update  \
     vim-tiny \
     gdb \
 	psmisc \
-
 #clean up
     && apt-get remove build-essential \
     && apt-get -yqq autoremove \
