@@ -17,7 +17,7 @@ trap 'kill ${!}; term_handler' SIGINT SIGKILL SIGTERM SIGQUIT SIGTSTP SIGSTOP SI
 echo "starting ssh ..."
 /etc/init.d/ssh start
 
-echo "init gpio"
+echo "init gpio "
 #sudo ./init.d/gpio.sh
 echo "17" > /sys/class/gpio/export
 echo "out" > /sys/class/gpio/gpio17/direction
