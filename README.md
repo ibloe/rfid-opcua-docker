@@ -5,7 +5,9 @@ Docker Container with OPC UA server to drive a Jadak ThingMagic(R) M6e Nano UHR 
 
 1. Open the Docker user interface
 2. Edit the parameters under **Containers > Add Container**
-	* **Image**: `ibloe/ua-server-docker:latest`
+	* **Image**: `ibloe/rfid_opcua_docker:latest`
+	* **Port mapping > map additional port**: `22 -> 22`
+	* **Port mapping > map additional port**: `4840 -> 4840`
 	* **Network > Network**: `host`
 	* **Restart policy** : `always`
 3. Press the button **Actions > Start container**

@@ -18,7 +18,10 @@ echo "starting ssh ..."
 /etc/init.d/ssh start
 
 echo "init gpio"
-sudo ./init.d/gpio.sh
+#sudo ./init.d/gpio.sh
+echo "17" > /sys/class/gpio/export
+echo "out" > /sys/class/gpio/gpio17/direction
+echo "1" > /sys/class/gpio/gpio17/value
 
 echo "starting opc-ua-server"
 sudo ./home/pi/rfid_opcua/rfid_opcua
