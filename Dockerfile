@@ -59,7 +59,7 @@ EXPOSE 4840
 EXPOSE 22
 
 #set the entrypoint
-ENTRYPOINT ["/etc/init.d/entrypoint.sh"]
+ENTRYPOINT ["sh","/etc/init.d/entrypoint.sh"]
 
 #set STOPSGINAL
 STOPSIGNAL SIGTERM
