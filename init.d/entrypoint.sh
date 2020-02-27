@@ -11,7 +11,7 @@ term_handler() {
 }
 
 # on callback, stop all started processes in term_handler
-trap 'kill ${!}; term_handler' SIGINT SIGKILL SIGTERM SIGQUIT SIGTSTP SIGSTOP SIGHUP
+trap 'kill ${!}; term_handler' INT KILL TERM QUIT TSTP STOP HUP
 
 # run applications in the background
 echo "starting ssh ..."

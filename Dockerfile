@@ -7,7 +7,7 @@ RUN [ "cross-build-start" ]
 #labeling
 LABEL maintainer="ibloe" \ 
     version="V0.0.0.1" \
-    description="drive_opcua_docker"
+    description="rfid-opcua-docker"
 
 #version
 ENV DRIVE_OPC_UA_DOCKER_VERSION 0.0.0.2
@@ -79,7 +79,7 @@ RUN apt-get update \
 COPY "./init.d/*" /etc/init.d/ 
 COPY "./rfid_opcua/" /home/pi/opc-ua-server/
 
-RUN sudo chmod -R g+rwx /home/pi/opc-ua-server/
+RUN sudo chmod -R +x /home/pi/opc-ua-server/
 	
 #OPC UA TCP & SSH
 EXPOSE 4840
