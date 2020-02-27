@@ -24,7 +24,7 @@ echo "out" > /sys/class/gpio/gpio17/direction
 echo "1" > /sys/class/gpio/gpio17/value
 
 echo "starting opc-ua-server"
-sudo ./home/pi/rfid_opcua/rfid_opcua
+sudo /home/pi/rfid_opcua/rfid_opcua
 
 # wait forever not to exit the container
 while true
