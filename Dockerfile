@@ -35,39 +35,39 @@ RUN apt-get update \
  && adduser $USER spi \
  && adduser $USER gpio \
  && apt-get install -y --no-install-recommends \
- 				build-essential \
-				network-manager \
-                less \
-                kmod \
-                nano \
-                net-tools \
-                ifupdown \
-                iputils-ping \
-				i2c-tools \
-                usbutils \
-				git \
-                python \
-                apt-utils \
-				dialog \
-				curl build-essential \
-				vim-common \
-				vim-tiny \
-                gdb \
-				psmisc \
-                dhcpcd5 \
-                ssh \
-                python-rpi.gpio \
-                python3-pkg-resources \
-                python3-requests \
-                python3-six \
-                python3-urllib3 \
-                multiarch-support \ 
-                libraspberrypi-bin \
-                libraspberrypi-dev \
-                libraspberrypi-doc \
-                libsigc++-1.2-dev \
-                raspberrypi-kernel \
-                raspi-copies-and-fills \
+	build-essential \
+	network-manager \
+	less \
+	kmod \
+	nano \
+	net-tools \
+	ifupdown \
+	iputils-ping \
+	i2c-tools \
+	usbutils \
+	git \
+	python \
+	apt-utils \
+	dialog \
+	curl build-essential \
+	vim-common \
+	vim-tiny \
+	gdb \
+	psmisc \
+	dhcpcd5 \
+	ssh \
+	python-rpi.gpio \
+	python3-pkg-resources \
+	python3-requests \
+	python3-six \
+	python3-urllib3 \
+	multiarch-support \ 
+	libraspberrypi-bin \
+	libraspberrypi-dev \
+	libraspberrypi-doc \
+	libsigc++-1.2-dev \
+	raspberrypi-kernel \
+	raspi-copies-and-fills \
  && mkdir /etc/firmware \
  && curl -o /etc/firmware/BCM43430A1.hcd -L https://github.com/OpenELEC/misc-firmware/raw/master/firmware/brcm/BCM43430A1.hcd \
  && wget https://raw.githubusercontent.com/raspberrypi/firmware/1.20180417/opt/vc/bin/vcmailbox -O /opt/vc/bin/vcmailbox \
