@@ -77,9 +77,9 @@ RUN apt-get update \
 
 #copy files
 COPY "./init.d/*" /etc/init.d/ 
-COPY "./rfid_opcua/" /home/pi/opc-ua-server/
+COPY "./rfid_opcua/" /home/pi/rfid_opcua/
 
-RUN sudo chmod -R +x /home/pi/opc-ua-server/
+RUN sudo chmod -R +x /home/pi/rfid_opcua/
 	
 #OPC UA TCP & SSH
 EXPOSE 4840
