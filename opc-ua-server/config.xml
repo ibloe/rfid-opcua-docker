@@ -1,0 +1,7 @@
+<!---DeviceInformation--->
+<DeviceConfig>
+    <AntennaCheck>1</AntennaCheck>
+    <AntennaPower>10</AntennaPower>
+    <Region>4</Region>
+    <SerialPort>/dev/ttyS0</SerialPort>
+</DeviceConfig>

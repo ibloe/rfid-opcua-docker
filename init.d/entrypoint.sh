@@ -17,14 +17,14 @@ trap 'kill ${!}; term_handler' INT KILL TERM QUIT TSTP STOP HUP
 echo "starting ssh ..."
 /etc/init.d/ssh start
 
-echo "init gpio "
+#echo "init gpio "
 #sudo ./init.d/gpio.sh
-echo "17" > /sys/class/gpio/export
-echo "out" > /sys/class/gpio/gpio17/direction
-echo "1" > /sys/class/gpio/gpio17/value
+#echo "17" > /sys/class/gpio/export
+#echo "out" > /sys/class/gpio/gpio17/direction
+#echo "1" > /sys/class/gpio/gpio17/value
 
 echo "starting opc-ua-server"
-sudo /home/pi/rfid-opcua/rfid-opcua
+sudo /home/pi/opc-ua-server/rfid_opcua
 
 # wait forever not to exit the container
 while true
