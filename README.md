@@ -9,6 +9,6 @@ Docker Container with OPC UA server to drive a Jadak ThingMagic(R) M6e Nano UHR 
 	* **Network > Network**: `host`
 	* **Restart policy** : `always`
 	* **Runtime & Ressources > Priviliged mode** : true
-	* **Runtime & Ressources > Devices > add device** : `/dev/ttyAMA0 -> /dev/ttyAMA0` or `/dev/ttyS0 -> /dev/ttyS0`
+	* **Runtime & Ressources > Devices > add device** : `/dev/ttyS0 -> /dev/ttyS0`
 	* **Runtime & Ressources > Devices > add device** : `/dev/gpiomem -> /dev/gpiomem`
 3. Press the button **Actions > Start container**
