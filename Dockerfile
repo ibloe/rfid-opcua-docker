@@ -6,7 +6,7 @@ RUN [ "cross-build-start" ]
 
 #labeling
 LABEL maintainer="ibloe" \ 
-    version="V0.0.0.1" \
+    version="V0.5.8.0" \
     description="rfid-opcua-docker"
 
 #version
